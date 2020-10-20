@@ -1,3 +1,4 @@
+using Coding_Interview_Algorithms_Data_Structures.Secao__8;
 using Coding_Interview_Algorithms_Data_Structures.Secao_3;
 using Coding_Interview_Algorithms_Data_Structures.Secao_4;
 using Coding_Interview_Algorithms_Data_Structures.Secao_5;
@@ -182,6 +183,69 @@ namespace Coding_Interview_Algorithms_Data_Structures
         #endregion
 
 
+        #region ChunkArray
+
+        [TestMethod]
+        public void ValidaChunkingArrayAreEqualOne()
+        {
+            ChunkArray chunk = new ChunkArray();
+
+            int[] array = new int[] { 1, 2, 3, 4, 5};
+
+            int result = chunk.ChunkingArray(array, 10);
+
+            Assert.AreEqual(1, result);
+        }
+
+        [TestMethod]
+        public void ValidaChunkingArrayAreEqualTwo()
+        {
+            ChunkArray chunk = new ChunkArray();
+
+            int[] array = new int[] {1, 2, 3, 4};
+
+            int result = chunk.ChunkingArray(array, 2);
+
+            Assert.AreEqual(2, result);
+        }
+
+        [TestMethod]
+        public void ValidaChunkingArrayAreEqualTwoSecondExample()
+        {
+            ChunkArray chunk = new ChunkArray();
+
+            int[] array = new int[] { 1, 2, 3, 4, 5};
+
+            int result = chunk.ChunkingArray(array, 4);
+
+            Assert.AreEqual(2, result);
+        }
+
+        [TestMethod]
+        public void ValidaChunkingArrayAreEqualThree()
+        {
+            ChunkArray chunk = new ChunkArray();
+
+            int[] array = new int[] { 1, 2, 3, 4, 5};
+
+            int result = chunk.ChunkingArray(array, 2);
+
+            Assert.AreEqual(3, result);
+        }
+
+        [TestMethod]
+        public void ValidaChunkingArrayAreEqualThreeSecondExample()
+        {
+            ChunkArray chunk = new ChunkArray();
+
+            int[] array = new int[] { 1, 2, 3, 4, 5, 6, 7, 8};
+
+            int result = chunk.ChunkingArray(array, 3);
+
+            Assert.AreEqual(3, result);
+        }
+
+        #endregion
 
     }
 }
