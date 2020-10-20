@@ -1,5 +1,6 @@
 using Coding_Interview_Algorithms_Data_Structures.Secao_3;
 using Coding_Interview_Algorithms_Data_Structures.Secao_4;
+using Coding_Interview_Algorithms_Data_Structures.Secao_5;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Coding_Interview_Algorithms_Data_Structures
@@ -64,6 +65,30 @@ namespace Coding_Interview_Algorithms_Data_Structures
 
             Assert.IsFalse(result);
             Assert.IsFalse(result2);
+        }
+
+        #endregion
+
+        #region IntegerReversal
+
+        [TestMethod]
+        public void IntegerReversal()
+        {
+            IntegerReversal integerReversal = new IntegerReversal();
+
+            int result = integerReversal.ReverseInteger(345);
+
+            Assert.AreEqual(543, result);
+        }
+
+        [TestMethod]
+        public void IntegerReversalNegativeNumber()
+        {
+            IntegerReversal integerReversal = new IntegerReversal();
+
+            int result = integerReversal.ReverseInteger(-51);
+
+            Assert.AreEqual(-15, result);
         }
 
         #endregion
