@@ -5722,11 +5722,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Projetos\\Cursos\\Coding-Interview-Algorithms-Data-Structures\\Coding-Interview-Algorithms-Data-Structures.csproj",
+      "projectUniqueName": "C:\\Projetos\\Projetos\\Cursos\\Coding-Interview-Data-Structures\\Coding-Interview-Algorithms-Data-Structures.csproj",
       "projectName": "Coding-Interview-Algorithms-Data-Structures",
-      "projectPath": "C:\\Projetos\\Projetos\\Cursos\\Coding-Interview-Algorithms-Data-Structures\\Coding-Interview-Algorithms-Data-Structures.csproj",
+      "projectPath": "C:\\Projetos\\Projetos\\Cursos\\Coding-Interview-Data-Structures\\Coding-Interview-Algorithms-Data-Structures.csproj",
       "packagesPath": "C:\\Users\\Flávio Ordone\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Projetos\\Cursos\\Coding-Interview-Algorithms-Data-Structures\\obj\\",
+      "outputPath": "C:\\Projetos\\Projetos\\Cursos\\Coding-Interview-Data-Structures\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

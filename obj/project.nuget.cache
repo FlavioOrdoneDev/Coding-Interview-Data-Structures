@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zzvoN4fAOF5OhGRHzIxcyrh7H5AYjzlG8/68FvIOo7Ews7xOyA7N0bg8mxKJO2bCe91gikwwTODHbEB84CO4vQ==",
+  "dgSpecHash": "CgZdeWtXkIgPs9Xorg2f59Cv4UoWcnRgkKEbj6EOIka7SdSFCvij2ZrKBohLy5ybQ0AFj+p9xjB3xkKXK1LAJg==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\Projetos\\Cursos\\Coding-Interview-Algorithms-Data-Structures\\Coding-Interview-Algorithms-Data-Structures.csproj",
+  "projectFilePath": "C:\\Projetos\\Projetos\\Cursos\\Coding-Interview-Data-Structures\\Coding-Interview-Algorithms-Data-Structures.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Flávio Ordone\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Flávio Ordone\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
