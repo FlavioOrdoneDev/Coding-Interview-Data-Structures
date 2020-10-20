@@ -2,6 +2,7 @@ using Coding_Interview_Algorithms_Data_Structures.Secao_3;
 using Coding_Interview_Algorithms_Data_Structures.Secao_4;
 using Coding_Interview_Algorithms_Data_Structures.Secao_5;
 using Coding_Interview_Algorithms_Data_Structures.Secao_6;
+using Coding_Interview_Algorithms_Data_Structures.Secao_7;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 
@@ -43,6 +44,7 @@ namespace Coding_Interview_Algorithms_Data_Structures
 
         #endregion
 
+
         #region Palindrome
 
         [TestMethod]
@@ -71,6 +73,7 @@ namespace Coding_Interview_Algorithms_Data_Structures
 
         #endregion
 
+
         #region IntegerReversal
 
         [TestMethod]
@@ -95,6 +98,8 @@ namespace Coding_Interview_Algorithms_Data_Structures
 
         #endregion
 
+
+        #region MaxChar
 
         [TestMethod]
         public void MaxChar()
@@ -141,6 +146,40 @@ namespace Coding_Interview_Algorithms_Data_Structures
             Assert.AreEqual("1", key);
             Assert.AreEqual(5, value);
         }
+
+        #endregion
+
+
+        #region FizzBuzz
+
+
+        [TestMethod]
+        public void ValidaFizzBuzzIsTrue()
+        {
+            FizzBuzz fizzBuzz = new FizzBuzz();
+
+            var result1 = fizzBuzz.GetFizzBuzz(3);
+            var result2 = fizzBuzz.GetFizzBuzz(5);
+            var result3 = fizzBuzz.GetFizzBuzz(15);
+
+            Assert.AreEqual("Fizz", result1);
+            Assert.AreEqual("Buzz", result2);
+            Assert.AreEqual("FizzBuzz", result3);
+        }
+
+        [TestMethod]
+        public void ValidaFizzBuzzIsFalse()
+        {
+            FizzBuzz fizzBuzz = new FizzBuzz();
+
+            var result = fizzBuzz.GetFizzBuzz(7);
+
+            Assert.AreEqual("Not FizzBuzz", result);
+
+
+        }
+
+        #endregion
 
 
 
