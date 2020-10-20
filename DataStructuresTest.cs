@@ -1,7 +1,9 @@
 using Coding_Interview_Algorithms_Data_Structures.Secao_3;
 using Coding_Interview_Algorithms_Data_Structures.Secao_4;
 using Coding_Interview_Algorithms_Data_Structures.Secao_5;
+using Coding_Interview_Algorithms_Data_Structures.Secao_6;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
 
 namespace Coding_Interview_Algorithms_Data_Structures
 {
@@ -92,6 +94,55 @@ namespace Coding_Interview_Algorithms_Data_Structures
         }
 
         #endregion
+
+
+        [TestMethod]
+        public void MaxChar()
+        {
+            MaxChar maxChar = new MaxChar();
+
+            string key = "";
+            int value = 0;
+
+            var result = maxChar.ObterMaxChar("Hello There!");
+
+            foreach (var item in result)
+            {
+                if (value < item.Value)
+                {
+                    key = item.Key.ToString();
+                    value = item.Value;
+                }                
+            }
+
+            Assert.AreEqual("e", key);
+            Assert.AreEqual(3, value);
+        }
+
+        [TestMethod]
+        public void MaxCharSegundoExemplo()
+        {
+            MaxChar maxChar = new MaxChar();
+
+            string key = "";
+            int value = 0;
+
+            var result = maxChar.ObterMaxChar("apple 1231111");
+
+            foreach (var item in result)
+            {
+                if (value < item.Value)
+                {
+                    key = item.Key.ToString();
+                    value = item.Value;
+                }
+            }
+
+            Assert.AreEqual("1", key);
+            Assert.AreEqual(5, value);
+        }
+
+
 
     }
 }
