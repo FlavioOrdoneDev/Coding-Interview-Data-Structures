@@ -1,4 +1,5 @@
 using Coding_Interview_Algorithms_Data_Structures.Secao__8;
+using Coding_Interview_Algorithms_Data_Structures.Secao_10;
 using Coding_Interview_Algorithms_Data_Structures.Secao_3;
 using Coding_Interview_Algorithms_Data_Structures.Secao_4;
 using Coding_Interview_Algorithms_Data_Structures.Secao_5;
@@ -278,6 +279,33 @@ namespace Coding_Interview_Algorithms_Data_Structures
             var result = anagram.IsAnagram("RAIL! SAFETY!", "fairy tales");
 
             Assert.IsTrue(result);
+        }
+
+        #endregion
+
+
+        #region SentenceCapitalization
+
+        [TestMethod]
+        public void FirstLetterCapitalizationAreEqual()
+        {
+            SentenceCapitalization sentence = new SentenceCapitalization();
+
+            var result = sentence.FirstLetterCapitalization("a short sentence");
+
+            Assert.AreEqual("A Short Sentence", result);
+
+        }
+
+        [TestMethod]
+        public void FirstLetterCapitalizationAreEqualWithPontuaction()
+        {
+            SentenceCapitalization sentence = new SentenceCapitalization();
+
+            var result = sentence.FirstLetterCapitalization("look, it is working!");
+
+            Assert.AreEqual("Look, It Is Working!", result);
+
         }
 
         #endregion
