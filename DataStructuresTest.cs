@@ -4,6 +4,7 @@ using Coding_Interview_Algorithms_Data_Structures.Secao_4;
 using Coding_Interview_Algorithms_Data_Structures.Secao_5;
 using Coding_Interview_Algorithms_Data_Structures.Secao_6;
 using Coding_Interview_Algorithms_Data_Structures.Secao_7;
+using Coding_Interview_Algorithms_Data_Structures.Secao_9;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 
@@ -247,5 +248,38 @@ namespace Coding_Interview_Algorithms_Data_Structures
 
         #endregion
 
+
+        #region Anagram
+
+        [TestMethod]
+        public void ValidateAnagramIsTrue()
+        {
+            Anagrams anagram = new Anagrams();
+
+            var result1 = anagram.IsAnagram("rail safety", "fairy tales");
+            Assert.IsTrue(result1);
+        }
+
+        [TestMethod]
+        public void ValidateAnagramIsFalse()
+        {
+            Anagrams anagram = new Anagrams();
+
+            var result = anagram.IsAnagram("Hi there", "Bye there");
+
+            Assert.IsFalse(result);
+        }
+
+        [TestMethod]
+        public void ValidateAnagramSpecialCaracterRemove()
+        {
+            Anagrams anagram = new Anagrams();
+
+            var result = anagram.IsAnagram("RAIL! SAFETY!", "fairy tales");
+
+            Assert.IsTrue(result);
+        }
+
+        #endregion
     }
 }

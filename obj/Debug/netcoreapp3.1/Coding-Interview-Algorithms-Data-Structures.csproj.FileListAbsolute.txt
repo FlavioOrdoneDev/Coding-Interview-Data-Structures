@@ -278,3 +278,4 @@ C:\Projetos\Projetos\Cursos\Coding-Interview-Data-Structures\obj\Debug\netcoreap
 C:\Projetos\Projetos\Cursos\Coding-Interview-Data-Structures\obj\Debug\netcoreapp3.1\Coding-Interview-Algorithms-Data-Structures.dll
 C:\Projetos\Projetos\Cursos\Coding-Interview-Data-Structures\obj\Debug\netcoreapp3.1\Coding-Interview-Algorithms-Data-Structures.pdb
 C:\Projetos\Projetos\Cursos\Coding-Interview-Data-Structures\obj\Debug\netcoreapp3.1\Coding-Interview-Algorithms-Data-Structures.genruntimeconfig.cache
+C:\Projetos\Projetos\Cursos\Coding-Interview-Data-Structures\obj\Debug\netcoreapp3.1\Coding-Interview-Algorithms-Data-Structures.csprojAssemblyReference.cache
