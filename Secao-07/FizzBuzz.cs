@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Coding_Interview_Algorithms_Data_Structures.Secao_7
+namespace Coding_Interview_Algorithms_Data_Structures
 {
     public class FizzBuzz
     {

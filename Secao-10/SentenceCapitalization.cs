@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Coding_Interview_Algorithms_Data_Structures.Secao_10
+namespace Coding_Interview_Algorithms_Data_Structures
 {
     public class SentenceCapitalization
     {

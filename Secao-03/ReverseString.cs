@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Coding_Interview_Algorithms_Data_Structures.Secao_3
+namespace Coding_Interview_Algorithms_Data_Structures
 {
     public class ReverseString
     {

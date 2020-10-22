@@ -1,13 +1,4 @@
-using Coding_Interview_Algorithms_Data_Structures.Secao__8;
-using Coding_Interview_Algorithms_Data_Structures.Secao_10;
-using Coding_Interview_Algorithms_Data_Structures.Secao_3;
-using Coding_Interview_Algorithms_Data_Structures.Secao_4;
-using Coding_Interview_Algorithms_Data_Structures.Secao_5;
-using Coding_Interview_Algorithms_Data_Structures.Secao_6;
-using Coding_Interview_Algorithms_Data_Structures.Secao_7;
-using Coding_Interview_Algorithms_Data_Structures.Secao_9;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Linq;
 
 namespace Coding_Interview_Algorithms_Data_Structures
 {
@@ -307,6 +298,94 @@ namespace Coding_Interview_Algorithms_Data_Structures
             Assert.AreEqual("Look, It Is Working!", result);
 
         }
+
+        #endregion
+
+
+        #region PrintingSteps
+
+        [TestMethod]
+        public void PrintingStepsLoopFor()
+        {
+            PrintingSteps steps = new PrintingSteps();
+
+            var step2 = "'**'";
+            var step3 = "'***'";
+            var step4 = "'****'";
+
+            var result2 = steps.PrintingStepsFor(2);
+            var result3 = steps.PrintingStepsFor(3);
+            var result4 = steps.PrintingStepsFor(4);
+
+            Assert.AreEqual(step2, result2);
+            Assert.AreEqual(step3, result3);
+            Assert.AreEqual(step4, result4);
+        }
+
+        #endregion
+
+
+        #region StepsPyramid
+
+        [TestMethod]
+        public void StepsPyramidAreEqual()
+        {
+            StepsPyramid steps = new StepsPyramid();
+
+            var step = "";
+
+            var result = steps.StepsPyramidsFor(4);
+
+            Assert.AreEqual(step, result);
+        }
+
+        #endregion
+
+
+        #region FindVowels
+
+        [TestMethod]
+        public void GetCountOfVowelssAreTrue()
+        {
+            FindVowels vowels = new FindVowels();
+
+            string frase = "Hi There!";
+            string frase2 = "Why do you ask?";
+            string frase3 = "Why";
+
+            int result = vowels.CountVowels(frase);
+            int result2 = vowels.CountVowels(frase2);
+            int result3 = vowels.CountVowels(frase3);
+
+            Assert.AreEqual(3, result);
+            Assert.AreEqual(4, result2);
+            Assert.AreEqual(0, result3);
+        }
+
+        [TestMethod]
+        public void GetCountOfVowelssAreNotEqual()
+        {
+            FindVowels vowels = new FindVowels();
+
+            string frase = "Hi There!";
+            string frase2 = "Why do you ask?";
+            string frase3 = "Why";
+
+            int result = vowels.CountVowels(frase);
+            int result2 = vowels.CountVowels(frase2);
+            int result3 = vowels.CountVowels(frase3);
+
+            Assert.AreNotEqual(4, result);
+            Assert.AreNotEqual(2, result2);
+            Assert.AreNotEqual(1, result3);
+        }
+
+        #endregion
+
+
+        #region MatrixSpiral
+
+
 
         #endregion
     }

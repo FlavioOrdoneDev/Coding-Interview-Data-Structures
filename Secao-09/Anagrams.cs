@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Coding_Interview_Algorithms_Data_Structures.Secao_9
+namespace Coding_Interview_Algorithms_Data_Structures
 {
     public class Anagrams
     {

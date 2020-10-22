@@ -1,9 +1,8 @@
-﻿using Coding_Interview_Algorithms_Data_Structures.Secao_3;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Coding_Interview_Algorithms_Data_Structures.Secao_4
+namespace Coding_Interview_Algorithms_Data_Structures
 {
     public class Palindrome
     {
