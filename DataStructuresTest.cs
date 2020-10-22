@@ -388,5 +388,33 @@ namespace Coding_Interview_Algorithms_Data_Structures
 
 
         #endregion
+
+        #region RuntimeComplexity
+
+        [TestMethod]
+        public void CalculateFibonacciSeriesAreEqual()
+        {
+            RuntimeComplexity run = new RuntimeComplexity();
+
+            int result5 = run.FibonacciSeries(4);
+            int result13 = run.FibonacciSeriesRecursive(6);
+
+            Assert.AreEqual(5, result5);
+            Assert.AreEqual(13, result13);
+        }
+
+        [TestMethod]
+        public void CalculateFibonacciSeriesAreNotEqual()
+        {
+            RuntimeComplexity run = new RuntimeComplexity();
+
+            int result5 = run.FibonacciSeries(4);
+            int result13 = run.FibonacciSeriesRecursive(6);
+
+            Assert.AreNotEqual(3, result5);
+            Assert.AreNotEqual(8, result13);
+        }
+
+        #endregion
     }
 }
